@@ -1,0 +1,201 @@
+{
+  "nodes": [
+  	{"id": ",,,", "group": 1},
+  
+    {"id": "water", "group": 2},
+    {"id": "steam", "group": 2},
+    {"id": "energy", "group": 2},
+    {"id": "coal", "group": 2},
+    {"id": "iron-ore", "group": 2},
+    {"id": "iron", "group": 2},
+    {"id": "iron-gear", "group": 2},
+    {"id": "copper-ore", "group": 2},
+    {"id": "copper", "group": 2},
+    {"id": "science-pack-1", "group": 2},
+    {"id": "stone", "group": 2},
+    
+    {"id": "transport-belt", "group": 3},
+    {"id": "copper-cable", "group": 3},
+    {"id": "green-circuit", "group": 3},
+    {"id": "science-pack-2", "group": 3},
+    {"id": "inserter", "group": 3},
+    
+    {"id": "yellow-ammo", "group": 4},
+    {"id": "steel", "group": 4},
+    {"id": "grenade", "group": 4},
+    {"id": "red-ammo", "group": 4},
+    {"id": "military-science-pack", "group": 4},
+    {"id": "gun-turret", "group": 4},
+    
+    {"id": "pipe", "group": 5},
+    {"id": "yellow-engine", "group": 5},
+    {"id": "science-pack-3", "group": 5},
+    {"id": "plastic-bar", "group": 5},
+    {"id": "red-circuit", "group": 5},
+    {"id": "oil", "group": 5},
+    {"id": "heavy-oil", "group": 5},
+    {"id": "light-oil", "group": 5},
+    {"id": "petroleum-gas", "group": 5},
+    {"id": "electric-mining-drill", "group": 5},
+    
+    {"id": "assembler-1", "group": 6},
+    {"id": "stone-brick", "group": 6},
+    {"id": "electric-furnace", "group": 6},
+    {"id": "red-engine", "group": 6},
+    {"id": "production-science-pack", "group": 6},
+    {"id": "lubricant", "group": 6},
+    
+    {"id": "sulfur", "group": 7},
+    {"id": "sulfuric-acid", "group": 7},
+    {"id": "battery", "group": 7},
+    {"id": "cpu", "group": 7},
+    {"id": "speed-module", "group": 7},
+    {"id": "ht-science-pack", "group": 7},
+    
+    {"id": "solid-fuel", "group": 8},
+    {"id": "rocket-fuel", "group": 8},
+    {"id": "rcu", "group": 8},
+    {"id": "rocket-part", "group": 8},
+    {"id": "lds", "group": 8},
+    
+    {"id": "...", "group": 1}
+  ],
+  "links": [
+    {"source": "water", "target": "steam", "value": 15},
+    {"source": "coal", "target": "steam", "value": 1},
+    {"source": "steam", "target": "energy", "value": 15},
+    
+    {"source": "coal", "target": "iron", "value": 1},
+    {"source": "iron-ore", "target": "iron", "value": 1},
+    
+    {"source": "coal", "target": "copper", "value": 1},
+    {"source": "copper-ore", "target": "copper", "value": 1},
+    
+    {"source": "iron", "target": "iron-gear", "value": 1},
+    
+    {"source": "iron-gear", "target": "science-pack-1", "value": 1},
+    {"source": "copper", "target": "science-pack-1", "value": 1},
+    
+    {"source": "iron", "target": "transport-belt", "value": 1},
+    {"source": "iron-gear", "target": "transport-belt", "value": 1},
+    
+    {"source": "copper", "target": "copper-cable", "value": 1},
+    
+    {"source": "copper-cable", "target": "green-circuit", "value": 1},
+    {"source": "iron", "target": "green-circuit", "value": 1},
+    
+    {"source": "iron", "target": "inserter", "value": 1},
+    {"source": "green-circuit", "target": "inserter", "value": 1},
+    {"source": "iron-gear", "target": "inserter", "value": 1},
+    
+    {"source": "inserter", "target": "science-pack-2", "value": 1},
+    {"source": "transport-belt", "target": "science-pack-2", "value": 1},
+    
+    {"source": "iron", "target": "yellow-ammo", "value": 1},
+    
+    {"source": "coal", "target": "steel", "value": 1},
+    {"source": "iron", "target": "steel", "value": 1},
+    
+    {"source": "yellow-ammo", "target": "red-ammo", "value": 1},
+    {"source": "steel", "target": "red-ammo", "value": 1},
+    
+    {"source": "coal", "target": "grenade", "value": 1},
+    {"source": "iron", "target": "grenade", "value": 1},
+    
+    {"source": "iron", "target": "gun-turret", "value": 1},
+    {"source": "copper", "target": "gun-turret", "value": 1},
+    {"source": "iron-gear", "target": "gun-turret", "value": 1},
+    
+    {"source": "gun-turret", "target": "military-science-pack", "value": 1},
+    {"source": "grenade", "target": "military-science-pack", "value": 1},
+    {"source": "red-ammo", "target": "military-science-pack", "value": 1},
+    
+    {"source": "oil", "target": "heavy-oil", "value": 15},
+    {"source": "oil", "target": "light-oil", "value": 15},
+    {"source": "oil", "target": "petroleum-gas", "value": 15},
+    
+    {"source": "iron", "target": "pipe", "value": 1},
+    
+    {"source": "pipe", "target": "yellow-engine", "value": 1},
+    {"source": "iron-gear", "target": "yellow-engine", "value": 1},
+    {"source": "steel", "target": "yellow-engine", "value": 1},
+    
+    {"source": "petroleum-gas", "target": "plastic-bar", "value": 15},
+    {"source": "coal", "target": "plastic-bar", "value": 1},
+    
+    {"source": "plastic-bar", "target": "red-circuit", "value": 1},
+    {"source": "copper-cable", "target": "red-circuit", "value": 1},
+    {"source": "green-circuit", "target": "red-circuit", "value": 1},
+    
+    {"source": "iron", "target": "electric-mining-drill", "value": 1},
+    {"source": "iron-gear", "target": "electric-mining-drill", "value": 1},
+    {"source": "green-circuit", "target": "electric-mining-drill", "value": 1},
+    
+    {"source": "electric-mining-drill", "target": "science-pack-3", "value": 1},
+    {"source": "red-circuit", "target": "science-pack-3", "value": 1},
+    {"source": "yellow-engine", "target": "science-pack-3", "value": 1},
+    
+    {"source": "green-circuit", "target": "assembler-1", "value": 1},
+    {"source": "iron-gear", "target": "assembler-1", "value": 1},
+    {"source": "iron", "target": "assembler-1", "value": 1},
+    
+    {"source": "stone", "target": "stone-brick", "value": 1},
+    {"source": "coal", "target": "stone-brick", "value": 1},
+    
+    {"source": "stone-brick", "target": "electric-furnace", "value": 1},
+    {"source": "steel", "target": "electric-furnace", "value": 1},
+    {"source": "red-circuit", "target": "electric-furnace", "value": 1},
+    
+    {"source": "yellow-engine", "target": "red-engine", "value": 1},
+    {"source": "lubricant", "target": "red-engine", "value": 15},
+    {"source": "green-circuit", "target": "red-engine", "value": 1},
+    
+    {"source": "red-engine", "target": "production-science-pack", "value": 1},
+    {"source": "electric-furnace", "target": "production-science-pack", "value": 1},
+    {"source": "assembler-1", "target": "production-science-pack", "value": 1},
+    
+    {"source": "heavy-oil", "target": "lubricant", "value": 15},
+    
+    {"source": "water", "target": "sulfur", "value": 15},
+    {"source": "petroleum-gas", "target": "sulfur", "value": 15},
+    
+    {"source": "sulfur", "target": "sulfuric-acid", "value": 1},
+    {"source": "water", "target": "sulfuric-acid", "value": 15},
+    {"source": "iron", "target": "sulfuric-acid", "value": 1},
+    
+    {"source": "copper", "target": "battery", "value": 1},
+    {"source": "sulfuric-acid", "target": "battery", "value": 15},
+    {"source": "iron", "target": "battery", "value": 1},
+    
+    {"source": "red-circuit", "target": "cpu", "value": 1},
+    {"source": "sulfuric-acid", "target": "cpu", "value": 15},
+    {"source": "green-circuit", "target": "cpu", "value": 1},
+    
+    {"source": "red-circuit", "target": "speed-module", "value": 1},
+    {"source": "green-circuit", "target": "speed-module", "value": 1},
+    
+    {"source": "cpu", "target": "ht-science-pack", "value": 1},
+    {"source": "speed-module", "target": "ht-science-pack", "value": 1},
+    {"source": "battery", "target": "ht-science-pack", "value": 1},
+    {"source": "copper-cable", "target": "ht-science-pack", "value": 1},
+    
+    {"source": "heavy-oil", "target": "solid-fuel", "value": 15},
+    {"source": "light-oil", "target": "solid-fuel", "value": 15},
+    {"source": "petroleum-gas", "target": "solid-fuel", "value": 15},
+    
+    {"source": "solid-fuel", "target": "rocket-fuel", "value": 1},
+    
+    {"source": "copper", "target": "lds", "value": 1},
+    {"source": "steel", "target": "lds", "value": 1},
+    {"source": "plastic-bar", "target": "lds", "value": 1},
+    
+    {"source": "speed-module", "target": "rcu", "value": 1},
+    {"source": "cpu", "target": "rcu", "value": 1},
+    
+    {"source": "lds", "target": "rocket-part", "value": 1},
+    {"source": "rcu", "target": "rocket-part", "value": 1},
+    {"source": "rocket-fuel", "target": "rocket-part", "value": 1},
+    
+    {"source": "...", "target": ",,,", "value": 1}
+  ]
+}
